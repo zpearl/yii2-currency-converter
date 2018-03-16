@@ -27,13 +27,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist imanilchaudhari/yii2-currency-converter "1.0"
+php composer.phar require --prefer-dist zpearl/yii2-currency-converter "1.0"
 ```
 
 or add
 
 ```
-"imanilchaudhari/yii2-currency-converter": "1.0"
+"zpearl/yii2-currency-converter": "1.0"
 ```
 
 to the require section of your `composer.json` file.
@@ -46,7 +46,7 @@ Once the extension is installed, simply use it in your code by  :
 
 ```php
 use Yii;
-use imanilchaudhari\CurrencyConverter\CurrencyConverter;
+use zpearl\CurrencyConverter\CurrencyConverter;
 
 $converter = new CurrencyConverter();
 $rate =  $converter->convert('USD', 'NPR');
@@ -315,7 +315,7 @@ Here is a code snippets suggested by [chaimleich](https://github.com/chaimleich)
 ```php
 
 use Yii;
-use imanilchaudhari\CurrencyConverter\Provider\OpenExchangeRatesApi;
+use zpearl\CurrencyConverter\Provider\OpenExchangeRatesApi;
 
 class CurrencyConverter extends \imanilchaudhari\CurrencyConverter\CurrencyConverter
 {
